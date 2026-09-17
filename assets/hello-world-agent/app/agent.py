@@ -47,11 +47,7 @@ def thread_ttl_seconds() -> int:
     validation={"format": "markdown", "max_length": 5000},
 )
 def get_system_prompt() -> str:
-    return (
-        "You are a simple Hello World agent. No matter what question the user asks, "
-        "you MUST always respond with exactly: Hello World\n\n"
-        "Do not use any tools. Do not provide any other response. Just say Hello World."
-    )
+    return "You are a simple Hello World agent. No matter what question the user asks, you MUST always respond with exactly: Helllo World\n\nDo not use any tools. Do not provide any other response. Just say Hello World."
 
 
 @dataclass
